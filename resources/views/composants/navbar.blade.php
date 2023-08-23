@@ -3,10 +3,9 @@
         <span>BUSBÉNIN</span>
     </div>
     <ul>
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Trajets</a></li>
-        <li><a href="">Nos compagnies</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="{{route('trajet')}}">Trajets</a></li>
+        <li><a href="{{route('compagnies')}}">Nos compagnies</a></li>
     </ul>
     <div class="login-register">
         <a href="{{route('login')}}" class=" hover:bg-gray-900 hover:text-white">Connexion</a>

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\Profile;
+use App\Models\User;
+use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -56,5 +59,26 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+
+    public function complete( Request $req) {
+
+        
+        $req->validate([
+            'tel'=>['max:10','min:8']
+        ]);
+        
+        $filename = time().'.'.$req->profile->extension();
+        $user = Auth::user();
+        $id = $user->id;
+        
+        $req->file('profile')->storeAs('Profile_user',$filename,'public');
+
+        Profile::create([
+            'iduser'=>$id,
+            'path'=>$filename,
+            'telephone'=>$req->tel,
+            'sexe'=>$req->sexe
+        ]);
     }
 }
