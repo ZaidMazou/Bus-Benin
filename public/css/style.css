@@ -13,8 +13,22 @@ nav{
   position: fixed;
   top: 0;
   z-index: 10;
-  background: white;
+  background: transparent;
   height: 70px;
+  transition: 0.5s ease;
+}
+nav.active{
+  background: #fff;
+}
+nav.active ul a{
+  color: #162440;
+}
+nav.active .login-register a{
+  color: #162440;
+  border: 1px solid #162440;
+}
+nav.active .login-register a:hover{
+  background: #162450;
 }
 nav,footer{
   width: 100%;
@@ -24,7 +38,7 @@ nav,footer{
   padding: 15px;
 }
 footer{
-  background-color: black;
+  background-color: #162440;
   height: 70px;
 }
 .logo span{
@@ -43,8 +57,12 @@ ul li{
 }
 ul li a{
   text-decoration: none;
-  color: black;
+  color: #242f73;
   font-size: 24px;
+  transition: 0.3s ;
+}
+ul li a:hover{
+  color: #162450;
 }
 .login-register{
   width: auto;
@@ -53,11 +71,11 @@ ul li a{
 }
 .login-register a{
   padding: 10px;
-  color: black;
+  color: #242f73;
   font-size: 19px;
   text-decoration: none;
   padding: 5px;
-  border: 1px solid rgb(48, 47, 47);
+  border: 1px solid #242f73;
   margin: 5px;
   border-radius: 5px;
 }
@@ -70,8 +88,12 @@ footer h2 span{
 }
 .header{
   width: 100vw;
-  height: 80vh;
+  height: 105vh;
   padding: 10px;
+  background: url('../storage/Profile_user/8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .header .header-content{
   position: absolute;
@@ -85,21 +107,22 @@ footer h2 span{
   font-size: 30px;
   text-align: center;
   margin-bottom: 35px;
+  color: #fff;
 }
 .header-content a{
   font-size: 25px;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: #fff;
   padding: 10px;
-  border: 1px solid rgb(48, 47, 47);
+  border: 1px solid #fff;
   border-radius: 10px;
   transition: 0.5s ease;
   margin-left: 100px;
 }
 .header-content a:hover{
   color: white;
-  background: black;
+  background: #162440;
 }
 .main{
   width: 100vw;

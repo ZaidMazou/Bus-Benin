@@ -1,8 +1,8 @@
-<nav>
+<nav class="nav">
     <div class="logo">
         <span>BUSBÉNIN</span>
     </div>
-    <ul>
+    <ul class="ulist">
         <li><a href="/">Accueil</a></li>
         <li><a href="{{route('trajet')}}">Trajets</a></li>
         <li><a href="{{route('compagnies')}}">Nos compagnies</a></li>
