@@ -28,6 +28,7 @@ Route::get('/compagnie',[CompagnieController::class,'compagnies'])->name('compag
 Route::get('/compagnie/{id}',[CompagnieController::class,'compagnie'])->name('compagnie');
 
 Route::get('/contact',[ContactContoller::class,'contact'])->name('contact');
+Route::post('/contact',[ContactContoller::class,'store'])->name('storeContact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

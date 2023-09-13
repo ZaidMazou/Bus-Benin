@@ -9,7 +9,7 @@
             @foreach ($compagnies as $compagnie)
             <div class="compagnie-content">
                 <div class="image">
-                    <img src="" alt="" srcset="">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="">
                 </div>
                 <div class=" w-full p-3 mb-3">
                     <p class=" text-[20px] text-gray-900 font-light">{{ $compagnie->description }}</p>

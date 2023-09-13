@@ -4,7 +4,7 @@
         <h2 class="">Nous contacter</h2>
     </div>
     <div class=" w-full h-auto p-[10px]">
-        <form action="" method="post">
+        <form action="{{route('storeContact')}}" method="post">
             @csrf
             <div class=" w-1/2 flex h-auto flex-col p-[10px] m-auto">
                 <label for="nom" class=" text-[18px] text-black mb-2">Nom <span class=" text-blue-600">*</span></label>

@@ -1,10 +1,21 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{$compagnie->nomCompagnie}}</title>
+    <link rel="stylesheet" href="/css/style.css">
 
-@section('content')
-    <section class=" w-full h-auto mt-40 mb-[50px] p-[10px]">
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+<body>
+    <section class=" w-full h-auto mb-[50px] p-[10px]">
         <div class=" w-full h-auto flex items-center justify-between p-3">
             <div class=" w-[40%] h-auto">
-                <img src="" alt="" srcset="" class=" w-full h-96 object-cover">
+                <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-96 object-cover">
             </div>
             <div class=" w-[40%] h-auto block p-3 text-gray-800">
                 <p class=" text-blue-500 text-[40px] font-bold m-3 text-center" >{{ $compagnie->nomCompagnie }}</p>
@@ -31,27 +42,29 @@
         <div class=" w-[100vw] h-auto overflow-x-scroll">
             <div class=" w-[260vw] h-auto flex items-center justify-center">
                 <div class=" w-[600px] h-[400px] m-2">
-                    <img src="" alt="" srcset="" class=" w-full h-full object-cover">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-full object-cover">
                 </div>
                 <div class=" w-[600px] h-[400px] m-2">
-                    <img src="" alt="" srcset="" class=" w-full h-full object-cover">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-full object-cover">
                 </div>
                 <div class=" w-[600px] h-[400px] m-2">
-                    <img src="" alt="" srcset="" class=" w-full h-full object-cover">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-full object-cover">
                 </div>
                 <div class=" w-[600px] h-[400px] m-2">
-                    <img src="" alt="" srcset="" class=" w-full h-full object-cover">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-full object-cover">
                 </div>
                 <div class=" w-[600px] h-[400px] m-2">
-                    <img src="" alt="" srcset="" class=" w-full h-full object-cover">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-full object-cover">
                 </div>
                 <div class=" w-[600px] h-[400px] m-2">
-                    <img src="" alt="" srcset="" class=" w-full h-full object-cover">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-full object-cover">
                 </div>
                 <div class=" w-[600px] h-[400px] m-2">
-                    <img src="" alt="" srcset="" class=" w-full h-full object-cover">
+                    <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="" class=" w-full h-full object-cover">
                 </div>
             </div>
         </div>
     </section>
-@endsection
+    @include('composants.footer')
+</body>
+</html>

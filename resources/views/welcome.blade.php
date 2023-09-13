@@ -38,7 +38,7 @@
             <div class="trajet-content">
                 <div class="compagnie-content">
                     <div class="image">
-                        <img src="" alt="" srcset="">
+                        <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="">
                     </div>
                     <div class=" w-full p-3 mb-3">
                         <p class=" text-[25px] text-gray-900 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, autem.</p>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="compagnie-content">
                     <div class="image">
-                        <img src="" alt="" srcset="">
+                        <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="">
                     </div>
                     <div class=" w-full p-3 mb-3">
                         <p class=" text-[25px] text-gray-900 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, autem.</p>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="compagnie-content">
                     <div class="image">
-                        <img src="" alt="" srcset="">
+                        <img src="{{Storage::url('Profile_user/7.jpeg')}}" alt="" srcset="">
                     </div>
                     <div class=" w-full p-3 mb-3">
                         <p class=" text-[25px] text-gray-900 font-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, autem.</p>
@@ -85,7 +85,7 @@
                 <h2 class="">A propos de nous</h2>
             </div>
             <div class=" w-full h-auto px-[10px] py-[5px] mb-[30px]">
-                <p class=" text-[20px] text-gray-900 font-light text-center p-2">
+                <p class=" text-[20px] text-gray-900 font-light text-center" id="desc">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et accusamus assumenda recusandae quaerat dolorum, tempore quisquam repellendus repudiandae autem aliquam, debitis eos dignissimos quam voluptate aut? Laudantium voluptatibus, hic iusto pariatur quae recusandae officiis laborum non. Laborum, illo vitae delectus sapiente debitis numquam quidem minus accusamus, ipsum iste facilis quaerat sit aperiam nulla vel at aliquam placeat eaque doloremque provident autem fugit dolores hic dicta! Unde, saepe ratione delectus quae maxime quod voluptatem veniam minima itaque tempore labore provident repudiandae natus modi? Voluptate aliquid, provident ratione blanditiis, consectetur quam iusto quas maxime magni sit libero dolore exercitationem omnis hic obcaecati.
                 </p>
             </div>
