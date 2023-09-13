@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-content">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt eaque eius sapiente iste facilis? Inventore!</p>
             <a href="{{route('dashboard')}}">Reservez votre ticket maintenant</a>

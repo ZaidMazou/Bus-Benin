@@ -221,3 +221,24 @@ footer h2 span{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.a-slider{
+  padding: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  top: 80vh;
+  background:#1948a7 ;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  display: none;
+}
+
+#header{
+  transition: 1s ease;
+}
+.a-slider svg{
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
